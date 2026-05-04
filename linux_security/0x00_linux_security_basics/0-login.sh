@@ -1,2 +1,2 @@
 #!/bin/bash
-last -n "$1" | awk '{print "User: "$1" | Login time: "$4" "$5" "$6" "$7}'
+sudo last -n "$1" | awk '{print "User: "$1" | Login time: "$4" "$5" "$6" "$7}'
