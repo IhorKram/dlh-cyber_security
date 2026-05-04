@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 # 4-to_infinity_and_beyond
+trap 'echo "Terminated"; exit' SIGTERM
+
 while true; do
     echo "To infinity and beyond"
     sleep 2
