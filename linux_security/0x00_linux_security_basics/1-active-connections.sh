@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo netstat -tnap
+sudo ss -tnap src $1
