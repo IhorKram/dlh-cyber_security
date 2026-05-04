@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo last -n "${1:-5}"
+sudo last -5 -F
