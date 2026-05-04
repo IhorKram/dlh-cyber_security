@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # 7-highlander
-trap 'echo "I am invincible!!!"; exit' SIGTERM
+trap 'echo "I am invincible!!!";' SIGTERM
 
 while true; do
     echo "To infinity and beyond"
