@@ -1,2 +1,2 @@
 #!/bin/bash
-getenforce
+sestatus | grep "Current mode"
