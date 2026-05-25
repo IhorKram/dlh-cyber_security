@@ -1,2 +1,2 @@
 #!/bin/bash
-nslookup -type=mx "$1" | grep "mail exchanger" | cut -d' ' -f4-
+nslookup\s+(-q|-type|-querytype|-query)=?[mM][xX]\s+\$1 "$1" | grep "mail exchanger" | cut -d' ' -f4-
