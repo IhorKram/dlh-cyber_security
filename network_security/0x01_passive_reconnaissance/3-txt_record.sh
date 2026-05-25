@@ -1,2 +1,2 @@
 #!/bin/bash
-nslookup -type=txt "$1" | grep "text =" | cut -d'=' -f2-
+nslookup -type=txt $1 | grep "text =" | cut -d'=' -f2-
