@@ -1,2 +1,2 @@
 #!/bin/bash
-nslookup -type=A "$1" | awk '/^Name:/ {flag=1; next} flag && /^Address:/ {print $2; exit}'
+nslookup -type=A "$1" | grep -A1 -A1 "^Name:" | grep "^Address:" | cut -d' ' -f2
