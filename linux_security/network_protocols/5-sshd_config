@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo sed -i -E 's/^#?PermitRootLogin.*/PermitRootLogin no/; s/^#?PasswordAuthentication.*/PasswordAuthentication no/; s/^#?Protocol.*/Protocol 2/' /etc/ssh/sshd_config
+sudo sed -i -E 's/^#?PermitRootLogin.*/PermitRootLogin no/; s/^#?PasswordAuthentication.*/PasswordAuthentication no/; s/^#?PermitEmptyPasswords.*/PermitEmptyPasswords no/; s/^#?Protocol.*/Protocol 2/' /etc/ssh/sshd_config
