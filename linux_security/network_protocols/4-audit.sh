@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo sshd -T | grep -Ev "^(permitrootlogin|passwordauthentication|port|pubkeyauthentication|x11forwarding)"
+grep -Ev "^(#|$)" /etc/ssh/sshd_config | grep -Ev "^(acceptenv|subsystem)"
