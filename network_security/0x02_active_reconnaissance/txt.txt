@@ -1,0 +1,7 @@
++----+--------------------+---------------------+----------+
+| id | email              | password            | username |
++----+--------------------+---------------------+----------+
+| 1  | yosri@active.hbtn  | 123456789@IRS5BR7G  | yosri    |
+| 2  | maroua@active.hbtn | admin123@IRS5BR7G   | maroua   |
+| 3  | abdou@active.hbtn  | abdouabdou@IRS5BR7G | abdou    |
++----+--------------------+---------------------+----------+
