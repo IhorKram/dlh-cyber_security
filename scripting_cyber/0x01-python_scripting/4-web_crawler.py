@@ -24,7 +24,7 @@ def crawl_website(start_url, max_depth=2):
             visited.add(url)
             if current_depth == max_depth:
                 return
-soup = BeautifulSoup(response.text, 'html.parser')
+            soup = BeautifulSoup(response.text, 'html.parser')
             for anchor in soup.find_all('a', href=True):
                 absolute_url = urljoin(url, anchor['href'])
                 absolute_url = urlparse(absolute_url)._replace(fragment='').geturl()
